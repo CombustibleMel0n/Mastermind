@@ -6,7 +6,7 @@ def main_loop():
         combi.append(random.randrange(1,9)) #Random Number
     nbre_essais = 12
     while nbre_essais > 0:
-        essai = input("Enter a series of numbers from 1 to 8 : ")
+        essai = input("Enter a series of 5 numbers from 1 to 8 : ")
         number_spot = 0
         just_number = 0
         try:
@@ -37,7 +37,7 @@ def main_loop():
                     nbre_essais -= 1
                     print(f"You have {number_spot} numbers in the right spot")
                     print(f"You have {just_number} numbers in the wrong spot")
-                    print(f"You have {nbre_essais} remaining !")
+                    print(f"You have {nbre_essais} tries remaining !")
             else :
                 print ("Please enter a series of exactly 5 numbers between 1 and 8 :")
         except ValueError:
